@@ -1,9 +1,7 @@
 import * as React from 'react';
 import * as WFace from '@wface/components';
 import { withStyles } from '@material-ui/core';
-import Requirements from './Requirements';
-import Setup from './Setup';
-import Usage from './Usage';
+import ProjectCard from './project-card';
 
 class MainPage extends React.Component<any, any> {
 
@@ -22,26 +20,30 @@ class MainPage extends React.Component<any, any> {
 
     return (
       <>
-      <div style={{ height: '400px', width: '100vw', display: 'table', backgroundImage: 'radial-gradient(#485563, #29323c)', 
-        color: 'white',
-        fontWeight: 600,
-        wordWrap: 'break-word',        
-      }}>
-        <div style={{ display: 'table-cell', verticalAlign: 'middle', textAlign: 'center' }}>
-          <div style={{fontSize: '4.5em', marginTop: 50}}>Digiturk Open Source</div>
-          <div style={{fontSize: '1.2em', marginTop: 20, fontWeight: 'normal', color: '#FFFFFF99'}}>
-            Açık kaynak dünyasından aldıklarımıza küçük karşılıklar...
+        <div style={{
+          height: '400px', width: '100vw', display: 'table', backgroundImage: 'radial-gradient(#485563, #29323c)',
+          color: 'white',
+          fontWeight: 600,
+          wordWrap: 'break-word',
+        }}>
+          <div style={{ display: 'table-cell', verticalAlign: 'middle', textAlign: 'center' }}>
+            <div style={{ fontSize: '4.5em', marginTop: 50 }}>Digiturk Open Source</div>
+            <div style={{ fontSize: '1.2em', marginTop: 20, fontWeight: 'normal', color: '#FFFFFF99' }}>
+              Açık kaynak dünyasından aldıklarımıza küçük karşılıklar...
           </div>
-        </div>        
-      </div>
-      <WFace.WGrid container style={{ padding:10, textAlign: 'left' }}>
-        <WFace.WGrid item xs={12} sm={12} md={6} lg={6} style={{ padding: '0 10px' }}>
-          <Requirements />
+          </div>
+        </div>
+        <WFace.WGrid container style={{ padding: 10, textAlign: 'left' }}>
+          <WFace.WGrid item xs={12} sm={12} md={6} lg={6} style={{ padding: '0 10px' }}>
+            <ProjectCard
+              title="WFace"
+              text="WFace, React tabanlı bir önyüz uygulama geliştirme platformudur. Tek sayfa uygulaması geliştirme maksatlı kullanım için tasarlanmıştır. İçerisinde bir çok bileşen barındırır."
+              image="/assets/react.png"
+              github="https://github.com/digiturk-dev/wface"
+              labels={['React.js', 'Redux', 'Typescript', 'material-ui']}
+            />
+          </WFace.WGrid>          
         </WFace.WGrid>
-        <WFace.WGrid item xs={12} sm={12} md={6} lg={6} style={{ padding: '0 10px' }}>
-          <Setup />
-        </WFace.WGrid>
-      </WFace.WGrid>
       </>
     );
   }

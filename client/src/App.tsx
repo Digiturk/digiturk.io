@@ -15,10 +15,10 @@ class AppInner extends React.Component<any, any> {
         <WFace.WAppBar position="absolute" className={classes.appBar} elevation={0}>
           <WFace.WToolBar>
             <span className={classes.flex}>
-              <WFace.WTypography variant="h5" color="inherit" noWrap style={{fontWeight: 500}}>
-                Digiturk 
+              <WFace.WTypography variant="h5" color="inherit" noWrap style={{ fontWeight: 500 }}>
+                Digiturk
               </WFace.WTypography>
-              <WFace.WTypography variant="body2" color="inherit" noWrap style={{fontWeight: 500}}>
+              <WFace.WTypography variant="body2" color="inherit" noWrap style={{ fontWeight: 500 }}>
                 Open Source
               </WFace.WTypography>
             </span>
@@ -27,7 +27,7 @@ class AppInner extends React.Component<any, any> {
               <WFace.WIconButton style={{color: '#FFFFFFCC'}}><WFace.WIcon style={{fontSize: 25}} iconSource="fontawesome" icon="fab fa-medium-m"/></WFace.WIconButton>
             </WFace.WTooltip> */}
             <WFace.WTooltip title="Github">
-              <a href="https://github.com/digiturk-dev" style={{color: '#FFFFFFCC'}}><WFace.WIcon style={{fontSize: 25}} iconSource="fontawesome" icon="fab fa-github"/></a>
+              <a href="https://github.com/digiturk-dev" style={{ color: '#FFFFFFCC' }}><WFace.WIcon style={{ fontSize: 25 }} iconSource="fontawesome" icon="fab fa-github" /></a>
             </WFace.WTooltip>
           </WFace.WToolBar>
         </WFace.WAppBar>
@@ -48,7 +48,7 @@ class AppInner extends React.Component<any, any> {
 const styles: any = (theme: any) => ({
   root: {
     flexGrow: 1,
-    height: '%100',
+    height: '100%',
     zIndex: 1,
     overflow: 'hidden',
     position: 'relative',
