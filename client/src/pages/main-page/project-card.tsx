@@ -41,6 +41,11 @@ export default class ProjectCard extends React.Component<any, any> {
                 ))}
               </div>
               <div style={{ position: 'absolute', top: 0, right: 0 }}>
+                {/* <a href={this.props.github}>
+                  <img src="https://img.shields.io/github/stars/digiturk-dev/wface.svg?style=for-the-badge&colorA=8c97a2&colorB=8c97a2&label=&suffix=ksdj"/>
+                </a> */}
+                
+
                 <WFace.WIconButton href={this.props.github}>
                   <WFace.WIcon style={{ fontSize: 25 }} iconSource="fontawesome" icon="fab fa-github" />
                 </WFace.WIconButton>

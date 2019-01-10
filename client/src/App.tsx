@@ -4,7 +4,7 @@ import * as React from 'react';
 import { Redirect, Route, withRouter } from 'react-router-dom';
 import MainPage from './pages/main-page';
 import TrainingPage from './pages/training';
-import BlogPage from './pages/blog';
+// @ts-ignore
 import { Scrollbars } from 'react-custom-scrollbars';
 
 class AppInner extends React.Component<any, any> {
@@ -26,9 +26,7 @@ class AppInner extends React.Component<any, any> {
             {/* <WFace.WTooltip title="Blog">
               <WFace.WIconButton style={{color: '#FFFFFFCC'}}><WFace.WIcon style={{fontSize: 25}} iconSource="fontawesome" icon="fab fa-medium-m"/></WFace.WIconButton>
             </WFace.WTooltip> */}
-            <WFace.WTooltip title="Github">
-              <a href="https://github.com/digiturk-dev" style={{ color: '#FFFFFFCC' }}><WFace.WIcon style={{ fontSize: 25 }} iconSource="fontawesome" icon="fab fa-github" /></a>
-            </WFace.WTooltip>
+            <a href="https://github.com/digiturk-dev" style={{ color: '#FFFFFFCC' }}><WFace.WIcon style={{ fontSize: 25 }} iconSource="fontawesome" icon="fab fa-github" /></a>
           </WFace.WToolBar>
         </WFace.WAppBar>
 
@@ -36,7 +34,6 @@ class AppInner extends React.Component<any, any> {
           <Scrollbars style={{ width: '100%', height: '100%' }}>
             <Route exact path="/" render={props => <Redirect to="/main" />} />
             <Route path="/main" component={MainPage} />
-            <Route path="/blog" component={BlogPage} />
             <Route path="/projects" component={TrainingPage} />
           </Scrollbars>
         </main>
