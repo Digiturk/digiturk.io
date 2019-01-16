@@ -42,7 +42,7 @@ export default class ProjectCard extends React.Component<any, any> {
               </div>
               <div style={{ position: 'absolute', top: 0, right: 0 }}>
                 {/* <a href={this.props.github}>
-                  <img src="https://img.shields.io/github/stars/digiturk-dev/wface.svg?style=for-the-badge&colorA=8c97a2&colorB=8c97a2&label=&suffix=ksdj"/>
+                  <img src="https://img.shields.io/github/stars/digiturk/wface.svg?style=for-the-badge&colorA=8c97a2&colorB=8c97a2&label=&suffix=ksdj"/>
                   <img src="https://img.shields.io/github/stars/badges/shields.svg?label=Stars&style=social"/>
                 </a> */}
                 
