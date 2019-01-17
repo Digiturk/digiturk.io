@@ -1,2 +1,2 @@
-# www.digiturk.io
-http://www.digiturk.io web application
+# digiturk.io
+[digiturk.io](http://digiturk.io) web application
