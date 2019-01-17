@@ -1,2 +1,2 @@
-# dev.digiturk.com.tr
-https://dev.digiturk.com.tr web application
+# www.digiturk.io
+http://www.digiturk.io web application
