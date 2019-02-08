@@ -4,29 +4,12 @@ import { CardMedia } from '@material-ui/core'
 
 export default class ProjectCard extends React.Component<any, any> {
 
-  private renderRequirement(primaryText: string, secondaryText: string, href: string, avatarUrl: string): React.ReactNode {
-    return (
-      <WFace.WListItem>
-        <div style={{ width: 40, textAlign: 'center' }}>
-          <img src={avatarUrl} style={{ maxHeight: 40, maxWidth: 40 }} />
-        </div>
-
-        <WFace.WListItemText primary={primaryText} secondary={secondaryText} />
-        <WFace.WListItemSecondaryAction>
-          <WFace.WIconButton href={href} target="_blank" color="primary">
-            <WFace.WIcon>get_app</WFace.WIcon>
-          </WFace.WIconButton>
-        </WFace.WListItemSecondaryAction>
-      </WFace.WListItem>
-    );
-  }
-
   public render() {
     return (
-      <WFace.WCard elevation={0}>
-        <WFace.WCardContent>
+      <WFace.WCard elevation={0} >
+        <WFace.WCardContent style={{minHeight: 150}}>
           <div style={{ display: 'flex', flexGrow: 1, position: 'relative', paddingTop: 10 }}>
-            <img src="/assets/react.png" alt="" style={{ height: 100 }} />
+            <img src={this.props.image} alt="" style={{ height: 100 }} />
             <span style={{ flex: 1, padding: '5px 20px 5px 20px' }}>
               <span style={{ fontWeight: 600, color: '#555', fontSize: 20 }}>{this.props.title}</span>
               <div style={{ color: '#65819d', marginTop: 20, textAlign: 'justify', fontSize: 14 }}>
@@ -40,12 +23,6 @@ export default class ProjectCard extends React.Component<any, any> {
                 ))}
               </div>
               <div style={{ position: 'absolute', top: 0, right: 0 }}>
-                {/* <a href={this.props.github}>
-                  <img src="https://img.shields.io/github/stars/digiturk/wface.svg?style=for-the-badge&colorA=8c97a2&colorB=8c97a2&label=&suffix=ksdj"/>
-                  <img src="https://img.shields.io/github/stars/badges/shields.svg?label=Stars&style=social"/>
-                </a> */}
-                
-
                 <WFace.WIconButton href={this.props.github}>
                   <WFace.WIcon style={{ fontSize: 25 }} iconSource="fontawesome" icon="fab fa-github" />
                 </WFace.WIconButton>
@@ -55,6 +32,10 @@ export default class ProjectCard extends React.Component<any, any> {
 
         </WFace.WCardContent>
         <WFace.WCardActions>
+
+          {this.props.demo && 
+            <WFace.WButton color="default" href={this.props.demo}>Demo</WFace.WButton>
+          }
           <WFace.WButton color="default" href={this.props.documentation}>Dökümantasyon</WFace.WButton>
         </WFace.WCardActions>
       </WFace.WCard>

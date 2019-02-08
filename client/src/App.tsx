@@ -8,6 +8,36 @@ import TrainingPage from './pages/training';
 import { Scrollbars } from 'react-custom-scrollbars';
 
 class AppInner extends React.Component<any, any> {
+
+  renderFooter() {
+    return (
+      <footer>
+        <div style={{ minHeight: 80, backgroundColor: '#2e3842', width: '100%', color: '#ccc', fontSize: 12 }}>
+          <div style={{ margin: 'auto', padding: 20, textAlign: 'right' }}>
+            Digiturk @2019 
+            {/* <WFace.WGrid container spacing={8}>
+              <WFace.WGrid item xs={12} sm={4} md={4} lg={4}>
+              </WFace.WGrid>
+              <WFace.WGrid item xs={12} sm={4} md={4} lg={4}>
+                <span className={this.props.classes.flex} >
+                  <WFace.WTypography variant="h5" color="inherit" noWrap style={{ fontWeight: 500, paddingTop: 40 }}>
+                    Digiturk
+                    </WFace.WTypography>
+                  <WFace.WTypography variant="body2" color="inherit" noWrap style={{ fontWeight: 500 }}>
+                    Open Source
+                    </WFace.WTypography>
+
+                </span>
+              </WFace.WGrid>
+              <WFace.WGrid item xs={12} sm={4} md={4} lg={4}>
+              </WFace.WGrid>
+            </WFace.WGrid> */}
+          </div>
+        </div>
+      </footer>
+    )
+  }
+
   public render() {
     const { classes } = this.props;
     return (
@@ -31,10 +61,15 @@ class AppInner extends React.Component<any, any> {
         </WFace.WAppBar>
 
         <main className={classes.content}>
-          <Scrollbars style={{ width: '100%', height: '100%' }}>            
-            <Route exact path="/" component={MainPage} />            
+          <Scrollbars style={{ width: '100%', height: '100%' }}>
+            <div style={{ minHeight: 500 }}>
+              <Route exact path="/" component={MainPage} />
+            </div>
+            {/* {this.renderFooter()} */}
           </Scrollbars>
+
         </main>
+
       </div>
     )
   }

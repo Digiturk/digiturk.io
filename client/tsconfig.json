@@ -17,6 +17,7 @@
             "es6"
         ],
         "esModuleInterop": true,
-        "allowSyntheticDefaultImports": true
+        "allowSyntheticDefaultImports": true,
+        "resolveJsonModule": true
     }
 }

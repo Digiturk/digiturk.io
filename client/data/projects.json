@@ -1,0 +1,19 @@
+[
+  {
+    "title": "WFace",
+    "text": "WFace, React tabanlı bir önyüz uygulama geliştirme platformudur. Tek sayfa uygulaması geliştirme maksatlı kullanım için tasarlanmıştır. İçerisinde bir çok bileşen barındırır.",
+    "image": "",
+    "github": "https://github.com/Digiturk/wface",
+    "documentation": "http://wface.digiturk.io",
+    "demo": "http://wface.demo.digiturk.io",
+    "labels": ["React.js", "Redux", "Typescript", "material-ui"]
+  },
+  {
+    "title": "Replify.Net",
+    "text": ".Net Core ile REPL uygulamaları geliştirmeyi kolaylaştıran bir kütüphene",
+    "image": "",
+    "github": "https://github.com/Digiturk/Replify.Net",
+    "documentation": "https://github.com/Digiturk/Replify.Net/blob/master/README.md",
+    "labels": [".Net Core", "REPL", "Console"]
+  }
+]

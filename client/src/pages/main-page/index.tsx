@@ -2,6 +2,7 @@ import * as React from 'react';
 import * as WFace from '@wface/components';
 import { withStyles } from '@material-ui/core';
 import ProjectCard from './project-card';
+import Projects from '../../../data/projects.json';
 
 class MainPage extends React.Component<any, any> {
 
@@ -33,18 +34,16 @@ class MainPage extends React.Component<any, any> {
           </div>
           </div>
         </div>
-        <WFace.WGrid container style={{ paddingTop: 10, textAlign: 'left' }} spacing={8}>
-          <WFace.WGrid item xs={12} sm={12} md={6} lg={6}>
-            <ProjectCard
-              title="WFace"
-              text="WFace, React tabanlı bir önyüz uygulama geliştirme platformudur. Tek sayfa uygulaması geliştirme maksatlı kullanım için tasarlanmıştır. İçerisinde bir çok bileşen barındırır."
-              image="/assets/react.png"
-              github="https://github.com/Digiturk/wface"
-              documentation="http://wface.digiturk.io"
-              labels={['React.js', 'Redux', 'Typescript', 'material-ui']}
-            />
-          </WFace.WGrid>          
-        </WFace.WGrid>
+        <div >
+
+          <WFace.WGrid container style={{ paddingTop: 10, textAlign: 'left' }} spacing={0}>
+            {Projects.map((project: any) => (
+              <WFace.WGrid item xs={12} sm={12} md={6} lg={6}>
+                <ProjectCard {...project} />
+              </WFace.WGrid>
+            ))}
+          </WFace.WGrid>
+        </div>
       </>
     );
   }
