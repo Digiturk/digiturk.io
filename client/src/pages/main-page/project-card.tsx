@@ -29,7 +29,6 @@ export default class ProjectCard extends React.Component<any, any> {
             <img src="/assets/react.png" alt="" style={{ height: 100 }} />
             <span style={{ flex: 1, padding: '5px 20px 5px 20px' }}>
               <span style={{ fontWeight: 600, color: '#555', fontSize: 20 }}>{this.props.title}</span>
-              <div style={{ width: 50, borderBottom: '4px solid rgb(63, 81, 181)', borderRadius: 4 }}></div>
               <div style={{ color: '#65819d', marginTop: 20, textAlign: 'justify', fontSize: 14 }}>
                 {this.props.text}
               </div>

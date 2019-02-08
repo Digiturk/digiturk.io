@@ -33,8 +33,8 @@ class MainPage extends React.Component<any, any> {
           </div>
           </div>
         </div>
-        <WFace.WGrid container style={{ padding: 10, textAlign: 'left' }}>
-          <WFace.WGrid item xs={12} sm={12} md={6} lg={6} style={{ padding: '0 10px' }}>
+        <WFace.WGrid container style={{ paddingTop: 10, textAlign: 'left' }} spacing={8}>
+          <WFace.WGrid item xs={12} sm={12} md={6} lg={6}>
             <ProjectCard
               title="WFace"
               text="WFace, React tabanlı bir önyüz uygulama geliştirme platformudur. Tek sayfa uygulaması geliştirme maksatlı kullanım için tasarlanmıştır. İçerisinde bir çok bileşen barındırır."
