@@ -3,14 +3,14 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import App from './App'
-import { HashRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import WMuiThemeProvider from './WMuiThemeProvider';
 
 ReactDOM.render(
-  <HashRouter>
+  <BrowserRouter>
     <WMuiThemeProvider>
       <App />
     </WMuiThemeProvider>
-  </HashRouter>,
+  </BrowserRouter>,
   document.getElementById("root")
 );

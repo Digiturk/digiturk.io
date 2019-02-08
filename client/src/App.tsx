@@ -31,10 +31,8 @@ class AppInner extends React.Component<any, any> {
         </WFace.WAppBar>
 
         <main className={classes.content}>
-          <Scrollbars style={{ width: '100%', height: '100%' }}>
-            <Route exact path="/" render={props => <Redirect to="/main" />} />
-            <Route path="/main" component={MainPage} />
-            <Route path="/projects" component={TrainingPage} />
+          <Scrollbars style={{ width: '100%', height: '100%' }}>            
+            <Route exact path="/" component={MainPage} />            
           </Scrollbars>
         </main>
       </div>
