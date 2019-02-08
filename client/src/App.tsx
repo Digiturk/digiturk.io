@@ -26,7 +26,7 @@ class AppInner extends React.Component<any, any> {
             {/* <WFace.WTooltip title="Blog">
               <WFace.WIconButton style={{color: '#FFFFFFCC'}}><WFace.WIcon style={{fontSize: 25}} iconSource="fontawesome" icon="fab fa-medium-m"/></WFace.WIconButton>
             </WFace.WTooltip> */}
-            <a href="https://github.com/digiturk" style={{ color: '#FFFFFFCC' }}><WFace.WIcon style={{ fontSize: 25 }} iconSource="fontawesome" icon="fab fa-github" /></a>
+            <a href="https://github.com/Digiturk" style={{ color: '#FFFFFFCC' }}><WFace.WIcon style={{ fontSize: 25 }} iconSource="fontawesome" icon="fab fa-github" /></a>
           </WFace.WToolBar>
         </WFace.WAppBar>
 

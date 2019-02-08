@@ -39,7 +39,8 @@ class MainPage extends React.Component<any, any> {
               title="WFace"
               text="WFace, React tabanlı bir önyüz uygulama geliştirme platformudur. Tek sayfa uygulaması geliştirme maksatlı kullanım için tasarlanmıştır. İçerisinde bir çok bileşen barındırır."
               image="/assets/react.png"
-              github="https://github.com/digiturk/wface"
+              github="https://github.com/Digiturk/wface"
+              documentation="http://wface.digiturk.io"
               labels={['React.js', 'Redux', 'Typescript', 'material-ui']}
             />
           </WFace.WGrid>          

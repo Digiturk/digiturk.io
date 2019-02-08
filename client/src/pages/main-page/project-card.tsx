@@ -35,9 +35,9 @@ export default class ProjectCard extends React.Component<any, any> {
               </div>
               <div style={{ marginTop: 20 }}>
                 {this.props.labels.map((label: any) => (
-                  <span style={{ padding: 5, margin: '3px 3px 3px 0', backgroundColor: '#8c97a2', color: '#FFF', fontSize: 11, borderRadius: 4 }}>
+                  <div style={{ padding: 5, margin: '3px 3px 3px 0', backgroundColor: '#8c97a2', color: '#FFF', fontSize: 11, borderRadius: 4, display: 'inline-block' }}>
                     {label}
-                  </span>
+                  </div>
                 ))}
               </div>
               <div style={{ position: 'absolute', top: 0, right: 0 }}>
@@ -56,7 +56,7 @@ export default class ProjectCard extends React.Component<any, any> {
 
         </WFace.WCardContent>
         <WFace.WCardActions>
-          <WFace.WButton color="default">Dökümantasyon</WFace.WButton>
+          <WFace.WButton color="default" href={this.props.documentation}>Dökümantasyon</WFace.WButton>
         </WFace.WCardActions>
       </WFace.WCard>
     );
