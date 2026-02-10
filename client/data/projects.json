@@ -1,12 +1,20 @@
 [
   {
     "title": "WFace",
-    "text": "WFace, React tabanlı bir önyüz uygulama geliştirme platformudur. Tek sayfa uygulaması geliştirme maksatlı kullanım için tasarlanmıştır. İçerisinde bir çok bileşen barındırır.",
-    "image": "",
+    "text": "WFace, React tabanlı bir ön yüz uygulama geliştirme platformudur. Tek sayfa uygulaması geliştirme maksatlı kullanım için tasarlanmıştır. İçerisinde bir çok bileşen barındırır.",
+    "image": "/assets/react.png",
     "github": "https://github.com/Digiturk/wface",
     "documentation": "http://wface.digiturk.io",
     "demo": "http://wface.demo.digiturk.io",
     "labels": ["React.js", "Redux", "Typescript", "material-ui"]
+  },
+  {
+    "title": "PixelUi",
+    "text": "PixelUi, React tabanlı bir ön yüz uygulama geliştirme platformudur. Ortak tasarım kararları ile geliştirme kolaylığı sağlayan, günümüz standartlarına uymayı hedefleyen modern bir kütüphanedir",
+    "image": "/assets/react.png",
+    "github": "https://www.npmjs.com/package/@wface/pixel-ui",
+    "documentation": "http://pixelui.digiturk.io",
+    "labels": ["React.js", "Typescript", "Vite"]
   },
   {
     "title": "Replify.Net",
